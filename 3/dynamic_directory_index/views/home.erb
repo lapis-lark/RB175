@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><%= @title %></title>
+
+    <link rel="stylesheet" href="stylesheets/pure-min.css">
+    <link rel="stylesheet" href="stylesheets/fonts.css">
+    <link rel="stylesheet" href="stylesheets/book_viewer.css">
+</head>
+
+<body>
+  <ul>
+    <% @entries.each do |e| %>
+      <li>
+      <a href=<%= e %> >
+      <%= "#{e}" %>
+      </a>
+      </li>
+    <% end %>
+  </ul>
+  <p></p>
+  <p><a href="/?reverse=true">sort descending</a></p>
+  <p><a href="/">sort ascending</a></p>
+</body>
+</html>
