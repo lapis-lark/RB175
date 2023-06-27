@@ -4,7 +4,7 @@
   <ul class="pure-menu-list">
     <% @contents.each_with_index do |chapter, idx| %>
       <li class="pure-menu-item">
-        <% url = "http://localhost:4567/chapters/#{idx + 1}" %>
+        <% url = "/chapters/#{idx + 1}" %>
         <a href=<%= url %> class="pure-menu-link"><%= chapter %></a>
       </li>
     <% end %>

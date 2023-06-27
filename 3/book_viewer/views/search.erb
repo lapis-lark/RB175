@@ -23,7 +23,7 @@
               <% sentences_matching(para, params[:query]).each do |l| %>
                 <% url = "#{result[:number]}##{id}" %>
                 <% highlighted = highlight(l, params[:query]) %>
-                <li><a href="http://localhost:4567/chapters/<%= url %>"><%= highlighted %></a></li>
+                <li><a href="/chapters/<%= url %>"><%= highlighted %></a></li>
               <% end %>
             <% end %>
           </ul>
