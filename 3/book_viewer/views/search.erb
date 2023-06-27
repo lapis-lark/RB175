@@ -13,7 +13,7 @@
 
     <ul>
       <% @results.each do |result| %>
-        <li><a href="/chapters/<%= result[:number] %>"><%= result[:name] %></a></li>
+        <li><strong><%= result[:name] %></strong></li>
           <ul>
             <%
             text = File.read("data/chp#{result[:number]}.txt")
@@ -22,12 +22,10 @@
             <% paragraphs.each do |id, para| %> 
               <% sentences_matching(para, params[:query]).each do |l| %>
                 <% url = "#{result[:number]}##{id}" %>
-                <li><a href="http://localhost:4567/chapters/<%= url %>"><%= l %></a></li>
+                <% highlighted = highlight(l, params[:query]) %>
+                <li><a href="http://localhost:4567/chapters/<%= url %>"><%= highlighted %></a></li>
               <% end %>
             <% end %>
-
-            
-
           </ul>
       <% end %>
     </ul>

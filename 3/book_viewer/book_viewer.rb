@@ -8,6 +8,10 @@ helpers do
       "<p id=#{idx}>#{para}<\p>" 
     end.join('')
   end
+
+  def highlight(line, term)
+    line.gsub(term, "<strong>#{term}</strong>")
+  end
 end
 
 def each_chapter

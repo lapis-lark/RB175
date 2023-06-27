@@ -1,0 +1,14 @@
+<h2><%= "#{@user} (#{@email})" %></h2>
+<p><strong>Interests:</strong></p>
+  <ul>
+  <% @interests.each do |i| %>
+    <li><%= i %></li>
+  <% end %>
+  </ul>
+  <p><strong>Other Users:</strong></p>
+  <ul>
+  <% @data.keys.each do |u| %>
+    <% next if u == @user %>
+    <li><a href=<%= "http://localhost:4567/data/users/#{u}" %>><%= u %></a></li>
+  <% end %>
+  </ul>
