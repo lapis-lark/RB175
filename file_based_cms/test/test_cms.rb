@@ -28,4 +28,13 @@ class CMSTest < Minitest::Test
     assert_equal "text/plain", last_response["Content-Type"]
     assert_includes last_response.body, "soaring amidst the clouds"
   end
+
+  def test_handle_nonexistent_file
+    get '/not_real.txt'
+    assert_equal 302, last_response.status
+    assert_equal "not_real.txt does not exist.", last_request.session[:error]
+    get last_response["Location"]
+    assert_equal 200, last_response.status
+    assert_nil last_request.session[:error]
+  end
 end
