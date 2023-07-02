@@ -4,6 +4,7 @@ GEM
     ast (2.4.2)
     erubis (2.7.0)
     json (2.6.3)
+    minitest (5.18.1)
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -18,6 +19,8 @@ GEM
     rack (2.2.7)
     rack-protection (3.0.6)
       rack
+    rack-test (2.1.0)
+      rack (>= 1.3)
     rainbow (3.1.1)
     regexp_parser (2.8.1)
     rexml (3.2.5)
@@ -54,7 +57,9 @@ PLATFORMS
 
 DEPENDENCIES
   erubis
+  minitest
   puma
+  rack-test
   rubocop (= 1.51)
   sinatra
   sinatra-contrib
