@@ -4,6 +4,8 @@ require 'sinatra/content_for'
 require "tilt/erubis"
 require 'redcarpet'
 
+
+
 def data_path
   if ENV["RACK_ENV"] == "test"
     File.expand_path("../test/data", __FILE__)
@@ -12,7 +14,6 @@ def data_path
   end
 end
 
-ROOT = data_path
 
 before do
   @title = "CMS"
@@ -32,7 +33,7 @@ configure do
 end
 
 def path_from_filename(filename)
-  ROOT + '/' + filename
+  data_path + '/' + filename
 end
 
 # e.g. txt, md, jpeg
@@ -44,7 +45,7 @@ def filename_from_path(filepath)
   filepath.split("/")[-1]
 end
 
-def load_file_content(filepath)
+def load_file_content(filepath, for_editing = false)
   filetype =  get_filetype(filepath)
   file = File.read(filepath)
 
@@ -54,12 +55,12 @@ def load_file_content(filepath)
     file
   when 'md'
     headers["Content-Type"] = "text/html;charset=utf-8"
-    render_markdown(file)
+    for_editing ? file : render_markdown(file)
   end
 end
 
 get "/" do
-  @files = Dir.glob(ROOT + "/*").map do |path|
+  @files = Dir.glob(data_path + "/*").map do |path|
     File.basename(path)
   end
   erb :index
@@ -81,7 +82,7 @@ get "/:filename/edit" do |filename|
   filepath = path_from_filename(filename)
 
   if File.file?(filepath)
-    @content = load_file_content(filepath)
+    @content = load_file_content(filepath, true)
     headers["Content-Type"] = "text/html;charset=utf-8"
     erb :edit
   else
