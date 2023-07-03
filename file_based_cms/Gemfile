@@ -8,6 +8,7 @@ gem "erubis"
 gem 'rubocop', '1.51', require: false
 gem 'rack-test'
 gem 'minitest'
+gem 'redcarpet'
 group :production do
   gem "puma"
 end
