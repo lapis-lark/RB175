@@ -4,7 +4,15 @@ require 'sinatra/content_for'
 require "tilt/erubis"
 require 'redcarpet'
 
-ROOT = File.expand_path("..", __FILE__)
+def data_path
+  if ENV["RACK_ENV"] == "test"
+    File.expand_path("../test/data", __FILE__)
+  else
+    File.expand_path("../data", __FILE__)
+  end
+end
+
+ROOT = data_path
 
 before do
   @title = "CMS"
@@ -24,7 +32,7 @@ configure do
 end
 
 def path_from_filename(filename)
-  ROOT + "/data/" + filename
+  ROOT + '/' + filename
 end
 
 # e.g. txt, md, jpeg
@@ -51,7 +59,7 @@ def load_file_content(filepath)
 end
 
 get "/" do
-  @files = Dir.glob(ROOT + "/data/*").map do |path|
+  @files = Dir.glob(ROOT + "/*").map do |path|
     File.basename(path)
   end
   erb :index
@@ -59,7 +67,7 @@ end
 
 get "/:filename" do |filename|
   filepath = path_from_filename(filename)
-
+  
   if File.file?(filepath)
     load_file_content(filepath)
   else
