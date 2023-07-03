@@ -1,1 +1,2 @@
-“Cursed, cursed creator! Why did I live? Why, in that instant, did I not extinguish the spark of existence which you had so wantonly bestowed? I know not; despair had not yet taken possession of me; my feelings were those of rage and revenge. I could with pleasure have destroyed the cottage and its inhabitants and have glutted myself with their shrieks and misery."
+When Ruby evaluates a constant reference expression, it returns the value of the constant, or it raises a NameError exception if no constant by that name could be found. Note that constants do not exist until a value is actually assigned to them. This is unlike variables that can come into existence when the interpreter sees, but does not execute, an assignment.
+  
