@@ -55,7 +55,7 @@ def load_file_content(filepath, for_editing = false)
     file
   when 'md'
     headers["Content-Type"] = "text/html;charset=utf-8"
-    for_editing ? file : render_markdown(file)
+    for_editing ? file : erb(render_markdown(file))
   end
 end
 
@@ -72,7 +72,7 @@ get "/:filename" do |filename|
   if File.file?(filepath)
     load_file_content(filepath)
   else
-    session[:error] = "#{filename} does not exist."
+    session[:message] = "#{filename} does not exist."
     redirect '/'
   end
 end
@@ -82,11 +82,11 @@ get "/:filename/edit" do |filename|
   filepath = path_from_filename(filename)
 
   if File.file?(filepath)
-    @content = load_file_content(filepath, true)
+    @content = load_file_content(filepath, 'for editing')
     headers["Content-Type"] = "text/html;charset=utf-8"
     erb :edit
   else
-    session[:error] = "#{filename} does not exist."
+    session[:message] = "#{filename} does not exist."
     redirect '/'
   end
 end
@@ -95,7 +95,7 @@ post '/:filename/edit' do |filename|
     # update file contents based on which param?
     filepath = path_from_filename(filename)
     File.write(filepath, params["new_content"])
-    session[:success] = "#{filename} successfully updated"
+    session[:message] = "#{filename} successfully updated"
     params.inspect
     redirect '/'
     
@@ -103,25 +103,16 @@ end
 
 =begin
   Requirements:
-    Create an edit link next to each document
-    Direct to edit page upon clicking edit link
-    The document's content will appear within a textarea
-    Changes can be saved with the "save changes" button
-      User then redirected to index page
-      Flash message about the update
+  Show flash messages against yellow background
+  Messages disappear when pages is reloaded
+  Text files continue to be displayed as plain text
+  Rendered Markdown should be displayed in sans-serif font
 
   Overview:
-    #*Create an edit button link that is printed with each filename (index.erb)
-    #*Create get "/:file/edit"
-      #*create @contents, @filepath/name?
-    Create post "/:file/edit"
-      redirect to '/'
-      add success message
-    Create edit.erb
-      #* Label for textarea
-      #* Look up how to make a textarea with contents loaded in
-      Save Changes button
-
+    Create css document in 'public/stylesheets'
+    require stylesheets (in layout.erb?)
+    add id to flash messages, create rule in css for this id
+    add css rule for sans-serif body
 
 
   Algo/Concrete:
