@@ -94,7 +94,6 @@ class CMSTest < Minitest::Test
   def test_create_file
     get '/new'
     assert_equal 200, last_response.status
-    p last_request.body
     assert_includes last_response.body, "<h3><label>Add a new file:</label></h3>"
 
     post '/new', newfile: 'hello.txt'
