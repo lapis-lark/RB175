@@ -57,10 +57,10 @@ class CMSTest < Minitest::Test
   def test_handle_nonexistent_file
     get '/not_real.txt'
     assert_equal 302, last_response.status
-    assert_equal 'not_real.txt does not exist.', last_request.session[:error]
+    assert_equal 'not_real.txt does not exist.', last_request.session[:message]
     get last_response['Location']
     assert_equal 200, last_response.status
-    assert_nil last_request.session[:error]
+    assert_nil last_request.session[:message]
   end
 
   def test_markdown_rendering
@@ -89,6 +89,24 @@ class CMSTest < Minitest::Test
     get '/about.txt'
     assert_equal 200, last_response.status
     assert_includes last_response.body, 'new content'
+  end
+
+  def test_create_file
+    get '/new'
+    assert_equal 200, last_response.status
+    p last_request.body
+    assert_includes last_response.body, "<h3><label>Add a new file:</label></h3>"
+
+    post '/new', newfile: 'hello.txt'
+    assert_equal 302, last_response.status
+    get last_response["Location"]
+    assert_includes last_response.body, ">New File</a></p>"
+
+    post '/new', newfile: 'hello'
+    assert_includes last_response.body, "invalid file name"
+
+    post '/new', newfile: ''
+    assert_includes last_response.body, "a name is required"
   end
 
   def teardown

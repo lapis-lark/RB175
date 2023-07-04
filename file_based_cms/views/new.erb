@@ -1,0 +1,5 @@
+<h3><label>Add a new file:</label></h3>
+<form action="/new" method="post" >
+  <input type="text" name="newfile" value=<%= params["newfile"] || " " %> />
+  <button type="submit">Create</button>
+</form>
