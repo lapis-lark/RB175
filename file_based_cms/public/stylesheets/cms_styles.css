@@ -8,6 +8,10 @@ body {
   background-color: #FFFF99;
 }
 
-.inline {
+form.inline {
   display: inline;
+}
+
+.inline_input {
+  display: inline-block;
 }

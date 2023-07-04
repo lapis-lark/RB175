@@ -4,6 +4,11 @@ require 'sinatra/content_for'
 require "tilt/erubis"
 require 'redcarpet'
 
+valid_users = [
+  {"admin" => "secret"}
+
+]
+
 
 
 def data_path
@@ -69,7 +74,14 @@ def load_file_content(filepath, for_editing = false)
   end
 end
 
+def valid_credentials?(user, pass, valid_users)
+  valid_users.include?({user => pass})
+end
+
 get "/" do
+  @user = session[:current_user]
+  return erb :signin_link unless @user
+
   @files = Dir.glob(data_path + "/*").map do |path|
     File.basename(path)
   end
@@ -135,25 +147,53 @@ post '/:filename/destroy' do |filename|
   redirect '/'
 end
 
+get '/users/signin' do 
+  erb :signin
+end
+
+post '/users/signin' do
+  if valid_credentials?(params["username"], params["password"], valid_users)
+    session[:message] = "Welcome!"
+    session[:current_user] = 'admin'
+    redirect '/'
+  else
+    session[:message] = "Invalid credentials"
+    erb :signin
+  end
+end
+
+post '/users/signout' do
+  session[:current_user] = nil
+  session[:message] = "you have been signed out"
+  redirect '/'
+end
+
 =begin
   Requirements:
-    #* add delete button next to each document
-    #* display message when file deleted
+    display link to login screen if not signed in
+    build login screen
+    flash welcome on login
+    sign out button at bottom
+    "signed in as..." message
 
   Overview:
-    add delete button next each entry on index.erb
-    create post '/:filename/destroy'
-      delete 
-      add success message
-      redirect to index
-    
+    display link to login if not signed in
+      link_to_signin.erb
+      users/signin.erb
+        username, pass fields; sign in button
+        validation, flash message if invalid
+        retain input information
+          post '/signin'
+            flash message 'welcome'
+            redirect ot '/'
+      update index.erb
+        sign out button
+        signed in as "#{}"
+      
 
-    Tests!
-      status
-      redirect
-      status
-      files no longer include deleted file
-
+  
+  
+  Tests!
 
 
   Algo/Concrete:
