@@ -109,6 +109,16 @@ class CMSTest < Minitest::Test
     assert_includes last_response.body, "a name is required"
   end
 
+  def test_destroy_file
+    post '/about.txt/destroy'
+    assert_equal last_response.status, 302
+
+    get last_response["Location"]
+    assert_equal last_response.status, 200
+
+    refute File.exist?('../test/data/about.txt')
+  end
+
   def teardown
     FileUtils.rm_rf(data_path)
   end

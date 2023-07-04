@@ -1,6 +1,9 @@
 <p><a href="/new">New File</a></p>
 <ul>
   <% @files.each do |file| %>
-    <li><a href=<%= "/#{file}" %>><%= file %></a> ~ <a href=<%= "/#{file}/edit" %>><%= "edit" %></a></li>
+    <li>
+    <a href=<%= "/#{file}" %>><%= file %></a> ~ 
+    <a href=<%= "/#{file}/edit" %>><%= "edit" %></a></li>
+    <form action=<%= "/#{file}/destroy" %> method="post"><button type="submit">delete</button></form>
   <% end %>
 </ul>

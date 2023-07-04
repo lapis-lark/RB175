@@ -37,7 +37,13 @@ def create_file(name, content = '')
 end
 
 def path_from_filename(filename)
-  data_path + '/' + filename
+  file = data_path + '/' + filename
+  if File.file?(file)
+    file
+  else
+    session[:message] = "#{filename} does not exist."
+    redirect '/'
+  end
 end
 
 # e.g. txt, md, jpeg
@@ -98,12 +104,7 @@ end
 get "/:filename" do |filename|
   filepath = path_from_filename(filename)
   
-  if File.file?(filepath)
-    load_file_content(filepath)
-  else
-    session[:message] = "#{filename} does not exist."
-    redirect '/'
-  end
+  load_file_content(filepath)
 end
 
 get "/:filename/edit" do |filename|
@@ -121,7 +122,6 @@ get "/:filename/edit" do |filename|
 end
 
 post '/:filename/edit' do |filename|
-    # update file contents based on which param?
     filepath = path_from_filename(filename)
     File.write(filepath, params["new_content"])
     session[:message] = "#{filename} successfully updated"
@@ -129,33 +129,30 @@ post '/:filename/edit' do |filename|
     redirect '/'
 end
 
+post '/:filename/destroy' do |filename|
+  File.delete(path_from_filename(filename))
+  session[:message] = "#{filename} successfully deleted"
+  redirect '/'
+end
+
 =begin
   Requirements:
-    Add button linking to add document page
-    Create add document page
-    Add label "Add a new document:" to text field
-    Create button for the text field
-    Add a success message, redirect to index
-    Verify that users entered a name, otherwise flash message
+    #* add delete button next to each document
+    #* display message when file deleted
 
   Overview:
-    #* Create button that links to get '/new' at top of index
-      #* erb new
-    Add new.erb
-      #*label
-      #* text input field
-      #* Create button (post '/new')
-    Create post '/new'
-      validate input
-      valid?
-        success message
-        redirect to index
-      invalid?
-        error message
-        erb new (preserve previous input)
+    add delete button next each entry on index.erb
+    create post '/:filename/destroy'
+      delete 
+      add success message
+      redirect to index
     
-    Write tests!!
 
+    Tests!
+      status
+      redirect
+      status
+      files no longer include deleted file
 
 
 

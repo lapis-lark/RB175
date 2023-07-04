@@ -1,4 +1,4 @@
-# Changelog
+# Walker
 
 ## Version 3.6.0
 
