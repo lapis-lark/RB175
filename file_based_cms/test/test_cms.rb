@@ -79,7 +79,7 @@ class CMSTest < Minitest::Test
   end
 
   def test_edit_file
-    get '/about.txt/edit'
+    get '/about.txt/edit', {}, admin_session
 
     assert_equal 200, last_response.status
     assert_includes last_response.body, '<textarea'
@@ -87,11 +87,11 @@ class CMSTest < Minitest::Test
   end
 
   def test_update_file
-    post 'about.txt/edit', new_content: 'new content'
+    post 'about.txt/edit', {new_content: 'new content'}, admin_session
     assert_equal 302, last_response.status
     assert_equal 'about.txt successfully updated', session[:message]
 
-    get '/about.txt'
+    get '/about.txt', {}, admin_session
     assert_equal 200, last_response.status
     assert_includes last_response.body, 'new content'
   end
@@ -117,7 +117,7 @@ class CMSTest < Minitest::Test
   end
 
   def test_destroy_file
-    post '/about.txt/destroy'
+    post '/about.txt/destroy', {}, admin_session
     assert_equal last_response.status, 302
     assert_equal 'about.txt successfully deleted', session[:message]
 
@@ -164,7 +164,20 @@ def test_signout
 end
 
 def test_unsignedin_users_cant_mutate
-  
+  get '/new'
+  assert_equal 302, last_response.status
+
+  post '/new'
+  assert_equal 302, last_response.status
+
+  get '/history.txt/edit'
+  assert_equal 302, last_response.status
+
+  post '/history.txt/edit'
+  assert_equal 302, last_response.status
+
+  post '/history.txt/destroy'
+  assert_equal 302, last_response.status
 end
 
   def teardown
