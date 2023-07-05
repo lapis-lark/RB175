@@ -86,6 +86,7 @@ end
 def redirect_unless_signed_in
   if session[:current_user].nil?
     session[:message] = "you must be signed in to do that"
+    status 422
     redirect '/'
   end
 end
@@ -93,6 +94,7 @@ end
 def redirect_unless_admin(filename)
   if filename == 'users.yml' && session[:current_user] != 'admin'
     session[:message] = "you don't have the proper credentials to access this file"
+    status 422
     redirect '/'
   end
 end

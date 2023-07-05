@@ -28,6 +28,7 @@ class CMSTest < Minitest::Test
 
   def setup
     FileUtils.mkdir_p(data_path)
+    create_file('users.yml', YAML.dump({"bob" => 'bobina', 'admin' => 'secret'}))
     create_file('about.txt', "It's beginning to feel a lot like Christmas")
     create_file('changes.txt', 'something something change is inevitable')
     create_file('history.txt', 'one death is a tragedy, a thousand is a statistic')
@@ -178,6 +179,20 @@ def test_unsignedin_users_cant_mutate
 
   post '/history.txt/destroy'
   assert_equal 302, last_response.status
+end
+
+def test_adding_user_accounts
+  post "/users/signin", username: "admin", password: "secret"
+
+  users = YAML.load(File.read("#{data_path}/users.yml"))
+  users["loca"] = 'loki'
+  post '/users.yml/edit', {new_content: YAML.dump(users) }
+  post "/users/signout"
+
+  post "/users/signin", username: "loca", password: "loki"
+  assert_equal "Welcome!", session[:message]
+  get last_response["Location"]
+  assert_includes last_response.body, "Signed in as loca"
 end
 
   def teardown
