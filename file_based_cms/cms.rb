@@ -90,6 +90,13 @@ def redirect_unless_signed_in
   end
 end
 
+def redirect_unless_admin(filename)
+  if filename == 'users.yml' && session[:current_user] != 'admin'
+    session[:message] = "you don't have the proper credentials to access this file"
+    redirect '/'
+  end
+end
+
 
 get "/" do
   @title = "CMS"
@@ -131,12 +138,14 @@ end
 
 get "/:filename" do |filename|
   filepath = path_from_filename(filename)
+  redirect_unless_admin(filename)
   
   load_file_content(filepath)
 end
 
 get "/:filename/edit" do |filename|
   redirect_unless_signed_in
+  redirect_unless_admin(filename)
 
   @filename = filename
   filepath = path_from_filename(filename)
@@ -153,6 +162,7 @@ end
 
 post '/:filename/edit' do |filename|
   redirect_unless_signed_in
+  redirect_unless_admin(filename)
 
   filepath = path_from_filename(filename)
   File.write(filepath, params["new_content"])
