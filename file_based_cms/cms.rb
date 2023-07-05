@@ -78,6 +78,14 @@ def valid_credentials?(user, pass, valid_users)
   valid_users.include?({user => pass})
 end
 
+def redirect_unless_signed_in
+  if session[:current_user].nil?
+    session[:message] = "you must be signed in to do that"
+    redirect '/'
+  end
+end
+
+
 get "/" do
   @title = "CMS"
   @user = session[:current_user]
@@ -90,11 +98,13 @@ get "/" do
 end
 
 get '/new' do
+  redirect_unless_signed_in
+
   erb :new
 end
 
 post '/new' do
-  # get_filetype(params["newfile"])
+  redirect_unless_signed_in
 
   filename = params["newfile"]
 
@@ -121,6 +131,8 @@ get "/:filename" do |filename|
 end
 
 get "/:filename/edit" do |filename|
+  redirect_unless_signed_in
+
   @filename = filename
   filepath = path_from_filename(filename)
 
@@ -135,14 +147,18 @@ get "/:filename/edit" do |filename|
 end
 
 post '/:filename/edit' do |filename|
-    filepath = path_from_filename(filename)
-    File.write(filepath, params["new_content"])
-    session[:message] = "#{filename} successfully updated"
-    params.inspect
-    redirect '/'
+  redirect_unless_signed_in
+
+  filepath = path_from_filename(filename)
+  File.write(filepath, params["new_content"])
+  session[:message] = "#{filename} successfully updated"
+  params.inspect
+  redirect '/'
 end
 
 post '/:filename/destroy' do |filename|
+  redirect_unless_signed_in
+
   File.delete(path_from_filename(filename))
   session[:message] = "#{filename} successfully deleted"
   redirect '/'
@@ -172,25 +188,15 @@ end
 
 =begin
   Requirements:
-    display link to login screen if not signed in
-    build login screen
-    flash welcome on login
-    sign out button at bottom
-    "signed in as..." message
+    prevent signed-out users from:
+      visiting edit page
+      submitting changes to doc
+      visit new doc page
+      submit new doc form
+      delete doc
 
   Overview:
-    display link to login if not signed in
-      link_to_signin.erb
-      users/signin.erb
-        username, pass fields; sign in button
-        validation, flash message if invalid
-        retain input information
-          post '/signin'
-            flash message 'welcome'
-            redirect ot '/'
-      update index.erb
-        sign out button
-        signed in as "#{}"
+    create 
       
 
   

@@ -22,6 +22,10 @@ class CMSTest < Minitest::Test
     last_request.env["rack.session"]
   end
 
+  def admin_session
+    { "rack.session" => {current_user: "admin"} }
+  end
+
   def setup
     FileUtils.mkdir_p(data_path)
     create_file('about.txt', "It's beginning to feel a lot like Christmas")
@@ -157,6 +161,10 @@ def test_signout
   
   get last_response["Location"]
   assert_includes last_response.body, "Sign In"
+end
+
+def test_unsignedin_users_cant_mutate
+  
 end
 
   def teardown
