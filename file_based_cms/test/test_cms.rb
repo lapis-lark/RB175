@@ -180,7 +180,10 @@ def test_unsignedin_users_cant_mutate
   post '/history.txt/destroy'
   assert_equal 302, last_response.status
 end
-
+=begin
+ #? remove users.yml from filelist, don't allow editing it via the application
+ #? this test assumes passwords stored in plaintext (obvi not a great idea)
+  
 def test_adding_user_accounts
   post "/users/signin", username: "admin", password: "secret"
 
@@ -194,6 +197,7 @@ def test_adding_user_accounts
   get last_response["Location"]
   assert_includes last_response.body, "Signed in as loca"
 end
+=end
 
   def teardown
     FileUtils.rm_rf(data_path)

@@ -4,14 +4,7 @@ require 'sinatra/content_for'
 require "tilt/erubis"
 require 'redcarpet'
 require 'yaml'
-
-valid_users = [
-  {"admin" => "secret"},
-  {"steve" => 'baseball'},
-  {"anna" => 'tea'}
-]
-
-
+require 'bcrypt'
 
 def data_path
   if ENV["RACK_ENV"] == "test"
@@ -53,7 +46,7 @@ def path_from_filename(filename)
   end
 end
 
-# e.g. txt, md, jpeg
+# e.g. txt, md, yml
 def get_filetype(filepath)
   filepath.split(".")[-1]
 end

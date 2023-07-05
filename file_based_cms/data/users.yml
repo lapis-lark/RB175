@@ -1,5 +1,19 @@
 ---
-admin: secret
-bob: bobina
-lapis: lark
-steve: cube
+admin: !ruby/string:BCrypt::Password
+  str: "$2a$12$4VyDFztBa369H6nXC/vu7.w6iY2oEJ6EMGH5bUr/dW/t9/JK2qlye"
+  version: 2a
+  cost: 12
+  salt: "$2a$12$4VyDFztBa369H6nXC/vu7."
+  checksum: w6iY2oEJ6EMGH5bUr/dW/t9/JK2qlye
+bob: !ruby/string:BCrypt::Password
+  str: "$2a$12$mROkkfWDG77kslUyJgtDL.ruXwg4nLz1DuhUWA2Cp6oC64wHx5jA6"
+  version: 2a
+  cost: 12
+  salt: "$2a$12$mROkkfWDG77kslUyJgtDL."
+  checksum: ruXwg4nLz1DuhUWA2Cp6oC64wHx5jA6
+lapis: !ruby/string:BCrypt::Password
+  str: "$2a$12$8714Sv/kL6DDHLdFdyPpuO2EiHSYlwaTRmOXF2Aq0UjyX2pZ9M.4K"
+  version: 2a
+  cost: 12
+  salt: "$2a$12$8714Sv/kL6DDHLdFdyPpuO"
+  checksum: 2EiHSYlwaTRmOXF2Aq0UjyX2pZ9M.4K
