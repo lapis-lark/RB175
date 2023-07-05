@@ -79,6 +79,7 @@ def valid_credentials?(user, pass, valid_users)
 end
 
 get "/" do
+  @title = "CMS"
   @user = session[:current_user]
   return erb :signin_link unless @user
 

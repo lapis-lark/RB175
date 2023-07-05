@@ -18,6 +18,10 @@ class CMSTest < Minitest::Test
     File.write("#{data_path}/#{name}", content)
   end
 
+  def session
+    last_request.env["rack.session"]
+  end
+
   def setup
     FileUtils.mkdir_p(data_path)
     create_file('about.txt', "It's beginning to feel a lot like Christmas")
@@ -58,10 +62,9 @@ class CMSTest < Minitest::Test
   def test_handle_nonexistent_file
     get '/not_real.txt'
     assert_equal 302, last_response.status
-    assert_equal 'not_real.txt does not exist.', last_request.session[:message]
+    assert_equal 'not_real.txt does not exist.', session[:message]
     get last_response['Location']
     assert_equal 200, last_response.status
-    assert_nil last_request.session[:message]
   end
 
   def test_markdown_rendering
@@ -81,11 +84,8 @@ class CMSTest < Minitest::Test
 
   def test_update_file
     post 'about.txt/edit', new_content: 'new content'
-
     assert_equal 302, last_response.status
-    get last_response['Location']
-
-    assert_includes last_response.body, 'about.txt successfully updated'
+    assert_equal 'about.txt successfully updated', session[:message]
 
     get '/about.txt'
     assert_equal 200, last_response.status
@@ -101,6 +101,7 @@ class CMSTest < Minitest::Test
 
     post '/new', newfile: 'hello.txt'
     assert_equal 302, last_response.status
+    assert_equal "hello.txt added to the system", session[:message]
     get last_response["Location"]
     assert_includes last_response.body, ">New File</a></p>"
 
@@ -114,6 +115,7 @@ class CMSTest < Minitest::Test
   def test_destroy_file
     post '/about.txt/destroy'
     assert_equal last_response.status, 302
+    assert_equal 'about.txt successfully deleted', session[:message]
 
     get last_response["Location"]
     assert_equal last_response.status, 200
@@ -134,8 +136,8 @@ def test_signin
   post "/users/signin", username: "admin", password: "secret"
   assert_equal 302, last_response.status
 
+  assert_equal "Welcome!", session[:message]
   get last_response["Location"]
-  assert_includes last_response.body, "Welcome"
   assert_includes last_response.body, "Signed in as admin"
 end
 
@@ -147,13 +149,13 @@ end
 
 def test_signout
   post "/users/signin", username: "admin", password: "secret"
-  get last_response["Location"]
-  assert_includes last_response.body, "Welcome!"
+  assert_equal 302, last_response.status
+  assert_equal "Welcome!", session[:message]
 
   post "/users/signout"
+  assert_equal "you have been signed out", session[:message]
+  
   get last_response["Location"]
-
-  assert_includes last_response.body, "you have been signed out"
   assert_includes last_response.body, "Sign In"
 end
 
