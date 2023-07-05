@@ -1,12 +1,15 @@
 <p><a href="/new">New File</a></p>
 <ul>
   <% @files.each do |file| %>
+    <% next if file == "users.yml" unless session[:current_user] == 'admin' %>
     <li>
       <a href=<%= "/#{file}" %>><%= file %></a> ~ 
       <a href=<%= "/#{file}/edit" %>><%= "edit" %></a>
       <form action=<%= "/#{file}/destroy" %> method="post" class ="inline"><button type="submit">delete</button></form>
     </li>
   <% end %>
+
+
 </ul>
 
 <form action="/users/signout" method="post" class="inline">
@@ -14,3 +17,11 @@
     <button type="submit">Sign Out</button>
   </p>
 </form>
+
+
+<!--
+<% if session[:current_user] == "admin" %>
+  <p><a href="users.txt/edit">edit users</a></p>
+<% end %>
+
+-->

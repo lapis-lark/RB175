@@ -3,10 +3,12 @@ require 'sinatra/reloader' if development?
 require 'sinatra/content_for'
 require "tilt/erubis"
 require 'redcarpet'
+require 'yaml'
 
 valid_users = [
-  {"admin" => "secret"}
-
+  {"admin" => "secret"},
+  {"steve" => 'baseball'},
+  {"anna" => 'tea'}
 ]
 
 
@@ -71,11 +73,14 @@ def load_file_content(filepath, for_editing = false)
   when 'md'
     headers["Content-Type"] = "text/html;charset=utf-8"
     for_editing ? file : erb(render_markdown(file))
+  when 'yml'
+    file
   end
 end
 
-def valid_credentials?(user, pass, valid_users)
-  valid_users.include?({user => pass})
+def valid_credentials?(user, pass)
+  valid_users = YAML.load(File.read(path_from_filename("users.yml")))
+  valid_users[user] == pass
 end
 
 def redirect_unless_signed_in
@@ -169,9 +174,9 @@ get '/users/signin' do
 end
 
 post '/users/signin' do
-  if valid_credentials?(params["username"], params["password"], valid_users)
+  if valid_credentials?(params["username"], params["password"])
     session[:message] = "Welcome!"
-    session[:current_user] = 'admin'
+    session[:current_user] = params["username"]
     redirect '/'
   else
     session[:message] = "Invalid credentials"
@@ -188,15 +193,12 @@ end
 
 =begin
   Requirements:
-    prevent signed-out users from:
-      visiting edit page
-      submitting changes to doc
-      visit new doc page
-      submit new doc form
-      delete doc
+    allow the admin to modify list of users who may sign into the application
 
   Overview:
-    create 
+    create txt file of users/passwords
+    prevent viewing or editing this unless admin
+    have it be in yaml format for easy translation?
       
 
   
