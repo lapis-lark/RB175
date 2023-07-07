@@ -1,13 +1,7 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Spirit Island Tracker</title>
+<h3>Player Records:</h3>
+<ul>
+  <% @users.each do |k, _| %>
+    <li><a href=<%= "/users/#{k}" %>><%= k %></a></li>
+  <% end %>
+</ul>
 
-  </head>
-
-  <body>
-
-  </body>
-
-
-</html>
