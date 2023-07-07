@@ -14,7 +14,6 @@ def data_path
 end
 
 get '/' do
-  
   @users = YAML.load(File.read(data_path + "/users.yml"), permitted_classes: [Time])
   erb :index
 end

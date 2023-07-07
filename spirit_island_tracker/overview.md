@@ -30,3 +30,8 @@ STEPS:
 
   get '/users/:name'
     blank for now
+
+  # To look up later
+   - what does Rack::Test include?
+     - uses?
+   - 
