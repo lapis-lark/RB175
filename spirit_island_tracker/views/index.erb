@@ -1,7 +1,7 @@
-<h3>Player Records:</h3>
+<h2>Player Records:</h2>
 <ul>
-  <% @users.each do |k, _| %>
-    <li><a href=<%= "/users/#{k}" %>><%= k %></a></li>
+  <% @users_data.each do |user, _| %>
+    <li><a href=<%= "/users/#{user}" %>><%= user %></a></li>
   <% end %>
 </ul>
 

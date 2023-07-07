@@ -34,4 +34,12 @@ STEPS:
   # To look up later
    - what does Rack::Test include?
      - uses?
-   - 
+
+
+### user_page
+  - games played (wins / losses)
+  - best game (highest score && win? == true)
+  - list of all games
+  - most played spirit (x times)
+  - least played spirits (x times)
+  

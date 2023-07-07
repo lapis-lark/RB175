@@ -1,0 +1,8 @@
+<h2><%= "#{@user}'s Stats" %></h2>
+<p><em><%= display_win_information(@user) %></em></p>
+<h4>Game history:</h4>
+<ul>
+  <% @users_data["lapis"].each do |game, _| %>
+    <li><a href=<%= "/users/games/#{game}" %> ><%= @users_data["lapis"][game]['time'] %></a></li>
+  <% end %>
+</ul>

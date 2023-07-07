@@ -13,9 +13,39 @@ def data_path
   end
 end
 
+def load_users_data
+  YAML.load(File.read(data_path + "/users.yml"), permitted_classes: [Time])
+end
+
+def generate_game_id
+  users_data = load_users_data
+  ids =[]
+  
+  users_data.each { |user| ids << users_data[user].keys }
+  return 0 if ids.empty?
+  ids.map.sort[-1] + 1
+end
+
+def display_win_information(user)
+  user_data = load_users_data[user]
+  games = user_data.keys.size
+  wins = user_data.select { |k, _| user_data[k]["win?"] == "true" }.size
+  losses = games - wins
+
+  "#{games} game(s) played (#{wins} win(s), #{losses} losses)"
+  # user_data.inspect
+end
+
+before do
+  @users_data = load_users_data
+end
+
 get '/' do
-  @users = YAML.load(File.read(data_path + "/users.yml"), permitted_classes: [Time])
   erb :index
 end
 
 
+get '/users/:user' do |user|
+  @user = user
+  erb :test_user_page
+end

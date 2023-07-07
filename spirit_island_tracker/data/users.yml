@@ -1,6 +1,6 @@
 ---
 lapis:
-  2023-07-07 14:27:48.324491299 -06:00:
+  0:
     win?: 'true'
     healthy_island?: 'false'
     score: '29'
@@ -11,3 +11,4 @@ lapis:
       brenda: Lightning's Swift Strike
       paul: Bring of Dreams and Nightmares
     date: '2023-07-07'
+    time: 2023-07-07 17:02:52.637202083 -06:00
