@@ -49,3 +49,10 @@ get '/users/:user' do |user|
   @user = user
   erb :test_user_page
 end
+
+get '/users/:user/games/:game_id' do |user, game_id|
+  @game_id = game_id.to_i
+  @user = user
+  # return @users_data[@user][@game_id].inspect
+  erb :game_data
+end

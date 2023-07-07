@@ -3,6 +3,6 @@
 <h4>Game history:</h4>
 <ul>
   <% @users_data["lapis"].each do |game, _| %>
-    <li><a href=<%= "/users/games/#{game}" %> ><%= @users_data["lapis"][game]['time'] %></a></li>
+    <li><a href=<%= "/users/#{@user}/games/#{game}" %> ><%= @users_data["lapis"][game]['time'] %></a></li>
   <% end %>
 </ul>
