@@ -5,7 +5,11 @@ p.header {
   padding: 10px;
 }
 
-#input {
+.input {
   padding: 100px;
   background-color: yellow;
+}
+
+.padded {
+  padding: 5px;
 }

@@ -15,7 +15,7 @@ def data_path
 end
 
 def load_game_data
-  YAML.load(File.read(data_path + "/games.yml"), permitted_classes: [Time])
+  YAML.load(File.read(data_path + "/games.yml"))
 end
 
 def generate_game_id
@@ -42,12 +42,49 @@ def display_win_information(user)
 end
 
 def join_and(arr)
-  arr[0...-1].join(', ') + ", and #{arr[-1]}"
+  return arr[0] if arr.size < 2
+  arr[0...-1].join(', ') + " and #{arr[-1]}"
 end
 
 def display_spirits_vs_adversary(data)
-  spirits = join_and(data["players"].values)
-  "#{spirits} vs. #{data['adversary']} Level #{data['level']}"
+  players = join_and(data["players"].keys)
+  "#{players} vs. #{data['adversary']} Level #{data['level']}"
+end
+
+=begin
+  IN: hash of player/spirit numbers and players/spirits
+  OUT: player keys spirit values hash
+  EX: {spirit0 => 'branch', player0 => 'lapis'}
+    => {'lapis' => 'branch'}
+
+  ALGO:
+    separate all spirit/player pairs
+    remove pairs with empty value
+    size/ 2.times |i|
+      new_hash[hash["player#{i}"]] = hash["spirit#{i}"]
+
+
+
+=end
+
+
+
+def cleaned_record
+  spir_play, cleaned = params.partition do |k, _|
+    k.match?('spirit') || k.match?('player') # could be improved, fine for now
+  end
+
+  cleaned = cleaned.to_h
+
+  spir_play.reject! { |_, v| v == 'empty' }
+  spir_play = spir_play.to_h
+  
+  players = {}
+  (spir_play.size / 2).times do |i|
+    players[spir_play["player#{i}"]] = spir_play["spirit#{i}"]
+  end
+  cleaned["players"] = players
+  cleaned
 end
 
 before do
@@ -66,14 +103,22 @@ get '/users/:user' do |user|
   erb :test_user_page
 end
 
-get '/users/:user/games/:game_id' do |user, game_id|
+get '/games/:game_id' do |game_id|
   @game_id = game_id.to_i
   @game = @game_data[@game_id]
-  @user = user
   # return @users_data[@user][@game_id].inspect
   erb :game_data
 end
 
 get '/new_record' do
+  @spirits = ['[empty]', "Shadows Flicker like Flame", "Starlight Seeks its Form", "Thunderspeaker", "Sharp Fangs Behind the Leaves", "Lure of the Deep Wilderness", "Volcano Looming High", "Grinning Trickster Stirs Up Trouble", "A Spread of Rampant Green", "River Surges in Sunlight", "Bringer of Dreams and Nightmares"]
+  @adversaries = %w(none Brandenburg-Prussia England France Russia Sweden Scotland Habsburg)  
   erb :new_record
+end
+
+post '/new_record' do 
+  game_id = generate_game_id
+  @game_data[game_id] = cleaned_record
+  File.write(data_path + "/games.yml", YAML.dump(@game_data))
+  redirect '/'
 end

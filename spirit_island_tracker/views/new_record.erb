@@ -1,5 +1,5 @@
 <h2>Add new game results:</h2>
-<form>
+<form action="/new_record" method="post">
   <div >
     <p><em>Did you win?</em></p>
     <label for="win_true">Yes</label>
@@ -10,9 +10,9 @@
   <div>
     <p><em>Was your island healthy or blighted?</em></p>
     <label for="healthy">Healthy</label>
-    <input type="radio" id="healthy" name="healthy_blighted" value="true">
+    <input type="radio" id="healthy" name="healthy_island?" value="true">
     <label for="blighted">Blighted</label>
-    <input type="radio" id="blighted" name="healthy_blighted" value="false">
+    <input type="radio" id="blighted" name="healthy_island?" value="false">
   </div>
   <br>
   <div >
@@ -23,27 +23,18 @@
   <div >
     <label for="adversary">Adversary: </label>
     <select type="" id="adversary" name="adversary">
-      <option value="Brandenburg-Prussia">Brandenburg Prussia</option>
-      <option value="England">England</option>
-      <option value="Sweden">Sweden</option>
-      <option value="France">France</option>
-      <option value="Habsburg Monarchy">Habsburg Monarchy</option>
-      <option value="Russia">Russia</option>
-      <option value="Scotland">Scotland</option>
-      <option value="none">none</option>
+      <% @adversaries.each do |adversary| %>
+        <option value=<%= adversary %>><%= adversary %></option>
+      <% end %>
     </select>
   </div>
   <br>
   <div>
     <label for="level">Level: </label>
     <select id="level" name="level">
-      <option value="0">0</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
+    <% 7.times do |i| %>
+      <option value=<%= i %>><%= i %></option>
+    <% end %>
     </select>
   </div>
   <br>
@@ -51,33 +42,24 @@
     <label for="date">Date Played (yyyy-mm-dd): </label>
     <input type="text" name="date" id="date" >
   </div>
-  
-
+  <br>
   <div>
-    <% 6.times do %>
+    <% 6.times do |i| %>
     <label for="players">Player: </label>
-    <select id="players" name="players">
+    <select id="players" name=<%= "player#{i}" %>>
       <option value="empty">[empty]</option>
       <% @users.each do |player| %>
         <option value=<%= player %>><%= player %></option>
       <% end %>
     </select>
     <label for="spirits">Spirit: </label>
-    <select id="spirits" name="spirits">
-      <option value="Shadows Flicker Like Flame">Shadows Flicker Like Flame</option>
-      <option value="Starlight Seeks its Form">Starlight Seeks its Form</option>
-      <option value="Thunderspeaker">Thunderspeaker</option>
-      <option value="Sharp Fangs Behind the Leaves">Sharp Fangs Behind the Leaves</option>
-      <option value="Lure of the Deep Wilderness">Lure of the Deep Wilderness</option>
-      <option value="Volcano Looming High">Volcano Looming High</option>
-      <option value="Grinning Trickster Stirs Up Trouble">Grinning Trickster Stirs Up Trouble</option>
-      <option value="A Spread of Rampant Green">A Spread of Rampant Green</option>
-      <option value="River Surges in Sunlight">River Surges in Sunlight</option>
-      <option value="Bringer of Dreams and Nightmares">Bringer of Dreams and Nightmares</option>
+    <select id="spirits" name=<%= "spirit#{i}" %>>
+      <% @spirits.each do |spirit| %>
+      <option value=<%= spirit%>><%= spirit %></option>
+      <% end %>
     </select>
-
     <br>
     <% end %>
   </div>
-
+  <button type="submit">Submit Results</button>
 </form>

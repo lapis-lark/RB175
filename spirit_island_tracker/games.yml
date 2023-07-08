@@ -1,0 +1,68 @@
+---
+0:
+  win?: 'true'
+  healthy_island?: 'false'
+  score: '29'
+  adversary: Scotland
+  level: '4'
+  players:
+    lapis: Ocean's Hungry Grasp
+    brenda: Lightning's Swift Strike
+    paul: Bringer of Dreams and Nightmares
+  date: '2023-07-07'
+1:
+  win?: 'true'
+  healthy_island?: 'true'
+  score: '100'
+  adversary: Russia
+  level: '3'
+  date: '2023-07-01'
+  players:
+    brenda: Thunderspeaker
+    lapis: A Spread of Rampant Green
+    julian: Bringer of Dreams and Nightmares
+    walker: Starlight Seeks its Form
+    man: Sharp Fangs Behind the Leaves
+2:
+  win?: 'true'
+  healthy_island?: 'false'
+  score: '34'
+  adversary: Scotland
+  level: '5'
+  date: '2023-07-19'
+  players:
+    amy: Shadows Flicker Like Flame
+    lapis: A Spread of Rampant Green
+    paul: Bringer of Dreams and Nightmares
+    flavia: Starlight Seeks its Form
+    man: River Surges in Sunlight
+3:
+  win?: 'true'
+  healthy_island?: 'true'
+  score: '56'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  date: '2004-05-12'
+  players:
+    marcus: Volcano Looming High
+4:
+  win?: 'false'
+  healthy_island?: 'false'
+  score: '45'
+  adversary: France
+  level: '6'
+  date: '1996-04-19'
+  players:
+    spencer: Volcano Looming High
+    flavia: A Spread of Rampant Green
+5:
+  win?: 'false'
+  healthy_island?: 'false'
+  score: '34'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  date: '2020-04-25'
+  players:
+    lapis: Bringer of Dreams and Nightmares
+    brenda: Grinning Trickster Stirs Up Trouble
+    walker: River Surges in Sunlight

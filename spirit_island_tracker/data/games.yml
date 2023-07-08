@@ -10,4 +10,2183 @@
     brenda: Lightning's Swift Strike
     paul: Bringer of Dreams and Nightmares
   date: '2023-07-07'
-  time: 2023-07-07 17:02:52.637202083 -06:00
+1:
+  win?: 'true'
+  healthy_island?: 'true'
+  score: '100'
+  adversary: Russia
+  level: '3'
+  date: '2023-07-01'
+  players:
+    brenda: Thunderspeaker
+    lapis: A Spread of Rampant Green
+    julian: Bringer of Dreams and Nightmares
+    walker: Starlight Seeks its Form
+    man: Sharp Fangs Behind the Leaves
+2:
+  win?: 'true'
+  healthy_island?: 'false'
+  score: '34'
+  adversary: Scotland
+  level: '5'
+  date: '2023-07-19'
+  players:
+    amy: Shadows Flicker Like Flame
+    lapis: A Spread of Rampant Green
+    paul: Bringer of Dreams and Nightmares
+    flavia: Starlight Seeks its Form
+    man: River Surges in Sunlight
+3:
+  win?: 'true'
+  healthy_island?: 'true'
+  score: '56'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  date: '2004-05-12'
+  players:
+    marcus: Volcano Looming High
+4:
+  win?: 'false'
+  healthy_island?: 'false'
+  score: '45'
+  adversary: France
+  level: '6'
+  date: '1996-04-19'
+  players:
+    spencer: Volcano Looming High
+    flavia: A Spread of Rampant Green
+5:
+  score: '16'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-5-9'
+  players:
+    spencer: River Surges in Sunlight
+    walker: Starlight Seeks its Form
+    marcus: A Spread of Rampant Green
+6:
+  score: '24'
+  adversary: Russia
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2020-8-18'
+  players:
+    man: Shadows Flicker like Flame
+    walker: River Surges in Sunlight
+7:
+  score: '15'
+  adversary: France
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2022-7-1'
+  players:
+    marcus: Lure of the Deep Wilderness
+    brenda: Thunderspeaker
+8:
+  score: '32'
+  adversary: Sweden
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2022-12-20'
+  players:
+    amy: Lure of the Deep Wilderness
+    flavia: A Spread of Rampant Green
+    spencer: Shadows Flicker like Flame
+9:
+  score: '17'
+  adversary: Brandenburg-Prussia
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2022-9-22'
+  players:
+    man: Lure of the Deep Wilderness
+    flavia: Lure of the Deep Wilderness
+    walker: River Surges in Sunlight
+10:
+  score: '42'
+  adversary: France
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-11-5'
+  players:
+    julian: Volcano Looming High
+    amy: Starlight Seeks its Form
+    walker: River Surges in Sunlight
+11:
+  score: '47'
+  adversary: Scotland
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-1-4'
+  players:
+    lapis: Sharp Fangs Behind the Leaves
+    man: Lure of the Deep Wilderness
+    marcus: A Spread of Rampant Green
+12:
+  score: '34'
+  adversary: Russia
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2022-2-21'
+  players:
+    spencer: Bringer of Dreams and Nightmares
+    marcus: Grinning Trickster Stirs Up Trouble
+    julian: River Surges in Sunlight
+13:
+  score: '48'
+  adversary: Habsburg
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2020-7-6'
+  players:
+    flavia: Bringer of Dreams and Nightmares
+    man: Shadows Flicker like Flame
+    brenda: Volcano Looming High
+14:
+  score: '44'
+  adversary: Russia
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-3-15'
+  players:
+    amy: Bringer of Dreams and Nightmares
+    walker: Shadows Flicker like Flame
+15:
+  score: '35'
+  adversary: Habsburg
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2021-12-10'
+  players:
+    julian: Starlight Seeks its Form
+    walker: Volcano Looming High
+    flavia: Bringer of Dreams and Nightmares
+16:
+  score: '54'
+  adversary: England
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-8-11'
+  players:
+    marcus: Shadows Flicker like Flame
+    amy: A Spread of Rampant Green
+    man: Grinning Trickster Stirs Up Trouble
+17:
+  score: '42'
+  adversary: Russia
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2023-8-13'
+  players:
+    flavia: Grinning Trickster Stirs Up Trouble
+    marcus: Grinning Trickster Stirs Up Trouble
+    man: Grinning Trickster Stirs Up Trouble
+18:
+  score: '14'
+  adversary: Sweden
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2020-4-23'
+  players:
+    walker: River Surges in Sunlight
+    flavia: Volcano Looming High
+    brenda: Lure of the Deep Wilderness
+19:
+  score: '14'
+  adversary: Sweden
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2022-5-26'
+  players:
+    marcus: Shadows Flicker like Flame
+    amy: Starlight Seeks its Form
+20:
+  score: '56'
+  adversary: Brandenburg-Prussia
+  level: '3'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2022-12-1'
+  players:
+    brenda: Bringer of Dreams and Nightmares
+    spencer: Starlight Seeks its Form
+    walker: River Surges in Sunlight
+21:
+  score: '32'
+  adversary: Habsburg
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-11-22'
+  players:
+    brenda: Bringer of Dreams and Nightmares
+    walker: Volcano Looming High
+22:
+  score: '44'
+  adversary: Habsburg
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-3-10'
+  players:
+    paul: Grinning Trickster Stirs Up Trouble
+    walker: Sharp Fangs Behind the Leaves
+    julian: A Spread of Rampant Green
+23:
+  score: '13'
+  adversary: Russia
+  level: '3'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-2-16'
+  players:
+    julian: Shadows Flicker like Flame
+    marcus: Shadows Flicker like Flame
+    amy: Sharp Fangs Behind the Leaves
+24:
+  score: '49'
+  adversary: Habsburg
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-1-6'
+  players:
+    flavia: Lure of the Deep Wilderness
+    brenda: A Spread of Rampant Green
+    walker: Shadows Flicker like Flame
+25:
+  score: '24'
+  adversary: Habsburg
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2020-12-16'
+  players:
+    julian: Grinning Trickster Stirs Up Trouble
+    walker: Shadows Flicker like Flame
+    brenda: Shadows Flicker like Flame
+26:
+  score: '45'
+  adversary: France
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-5-5'
+  players:
+    flavia: Shadows Flicker like Flame
+    paul: Starlight Seeks its Form
+    spencer: River Surges in Sunlight
+27:
+  score: '58'
+  adversary: Sweden
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2022-8-24'
+  players:
+    walker: Shadows Flicker like Flame
+    man: Thunderspeaker
+    flavia: Lure of the Deep Wilderness
+28:
+  score: '55'
+  adversary: France
+  level: '2'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2022-4-2'
+  players:
+    marcus: Starlight Seeks its Form
+    paul: Grinning Trickster Stirs Up Trouble
+    amy: Sharp Fangs Behind the Leaves
+29:
+  score: '32'
+  adversary: Habsburg
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-10-27'
+  players:
+    walker: A Spread of Rampant Green
+    man: Bringer of Dreams and Nightmares
+    lapis: Bringer of Dreams and Nightmares
+30:
+  score: '24'
+  adversary: Scotland
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2020-4-9'
+  players:
+    walker: Bringer of Dreams and Nightmares
+    lapis: Sharp Fangs Behind the Leaves
+31:
+  score: '43'
+  adversary: Brandenburg-Prussia
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-6-6'
+  players:
+    walker: Grinning Trickster Stirs Up Trouble
+    spencer: Starlight Seeks its Form
+    man: Starlight Seeks its Form
+32:
+  score: '50'
+  adversary: Sweden
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2020-6-5'
+  players:
+    brenda: Starlight Seeks its Form
+    man: Lure of the Deep Wilderness
+    flavia: Sharp Fangs Behind the Leaves
+33:
+  score: '41'
+  adversary: Habsburg
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2018-5-16'
+  players:
+    julian: Bringer of Dreams and Nightmares
+    brenda: Volcano Looming High
+34:
+  score: '23'
+  adversary: Scotland
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2019-11-1'
+  players:
+    man: Bringer of Dreams and Nightmares
+    brenda: Starlight Seeks its Form
+35:
+  score: '49'
+  adversary: France
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-1-14'
+  players:
+    paul: River Surges in Sunlight
+    man: Thunderspeaker
+    walker: A Spread of Rampant Green
+36:
+  score: '49'
+  adversary: Russia
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2020-4-27'
+  players:
+    walker: Bringer of Dreams and Nightmares
+    amy: Grinning Trickster Stirs Up Trouble
+37:
+  score: '36'
+  adversary: England
+  level: '2'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2023-6-7'
+  players:
+    julian: Shadows Flicker like Flame
+    brenda: Thunderspeaker
+    paul: Sharp Fangs Behind the Leaves
+38:
+  score: '22'
+  adversary: Russia
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2018-3-9'
+  players:
+    walker: Starlight Seeks its Form
+    man: Lure of the Deep Wilderness
+    lapis: River Surges in Sunlight
+39:
+  score: '52'
+  adversary: Russia
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-4-22'
+  players:
+    walker: Lure of the Deep Wilderness
+    julian: Lure of the Deep Wilderness
+40:
+  score: '46'
+  adversary: Russia
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-9-4'
+  players:
+    spencer: Sharp Fangs Behind the Leaves
+    man: Lure of the Deep Wilderness
+    julian: Sharp Fangs Behind the Leaves
+41:
+  score: '19'
+  adversary: Habsburg
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2023-9-23'
+  players:
+    walker: Lure of the Deep Wilderness
+    spencer: Lure of the Deep Wilderness
+    lapis: Shadows Flicker like Flame
+42:
+  score: '23'
+  adversary: England
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-8-27'
+  players:
+    paul: Bringer of Dreams and Nightmares
+    lapis: River Surges in Sunlight
+43:
+  score: '41'
+  adversary: Brandenburg-Prussia
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2020-4-25'
+  players:
+    walker: A Spread of Rampant Green
+    paul: Starlight Seeks its Form
+    brenda: A Spread of Rampant Green
+44:
+  score: '22'
+  adversary: England
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-2-6'
+  players:
+    amy: Sharp Fangs Behind the Leaves
+    man: Lure of the Deep Wilderness
+45:
+  score: '10'
+  adversary: Sweden
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2021-7-1'
+  players:
+    marcus: Sharp Fangs Behind the Leaves
+    walker: A Spread of Rampant Green
+    lapis: Shadows Flicker like Flame
+46:
+  score: '57'
+  adversary: Sweden
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-10-20'
+  players:
+    julian: Thunderspeaker
+    marcus: River Surges in Sunlight
+47:
+  score: '55'
+  adversary: England
+  level: '2'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2021-7-18'
+  players:
+    amy: Thunderspeaker
+    paul: Starlight Seeks its Form
+48:
+  score: '51'
+  adversary: England
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-5-1'
+  players:
+    paul: Grinning Trickster Stirs Up Trouble
+    julian: Lure of the Deep Wilderness
+    amy: Shadows Flicker like Flame
+49:
+  score: '49'
+  adversary: Scotland
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-9-3'
+  players:
+    spencer: A Spread of Rampant Green
+    marcus: Thunderspeaker
+50:
+  score: '14'
+  adversary: England
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2020-3-22'
+  players:
+    marcus: Starlight Seeks its Form
+    walker: Lure of the Deep Wilderness
+    julian: Bringer of Dreams and Nightmares
+51:
+  score: '57'
+  adversary: Russia
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2023-4-10'
+  players:
+    julian: Grinning Trickster Stirs Up Trouble
+    lapis: River Surges in Sunlight
+    man: Grinning Trickster Stirs Up Trouble
+52:
+  score: '54'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-2-7'
+  players:
+    man: Volcano Looming High
+    marcus: Lure of the Deep Wilderness
+    walker: Grinning Trickster Stirs Up Trouble
+53:
+  score: '48'
+  adversary: Russia
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2018-2-27'
+  players:
+    walker: Thunderspeaker
+    man: Shadows Flicker like Flame
+54:
+  score: '37'
+  adversary: Habsburg
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2023-6-26'
+  players:
+    flavia: Lure of the Deep Wilderness
+    man: Volcano Looming High
+55:
+  score: '50'
+  adversary: Russia
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-12-20'
+  players:
+    flavia: Starlight Seeks its Form
+    man: Thunderspeaker
+56:
+  score: '33'
+  adversary: Scotland
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-12-19'
+  players:
+    amy: Sharp Fangs Behind the Leaves
+    marcus: Volcano Looming High
+57:
+  score: '23'
+  adversary: Habsburg
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-6-11'
+  players:
+    brenda: Volcano Looming High
+    spencer: River Surges in Sunlight
+    lapis: Starlight Seeks its Form
+58:
+  score: '45'
+  adversary: Habsburg
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-10-13'
+  players:
+    spencer: Thunderspeaker
+    flavia: Volcano Looming High
+59:
+  score: '40'
+  adversary: England
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2020-11-6'
+  players:
+    amy: River Surges in Sunlight
+    brenda: Volcano Looming High
+    walker: Thunderspeaker
+60:
+  score: '48'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2023-6-11'
+  players:
+    marcus: Sharp Fangs Behind the Leaves
+    brenda: Lure of the Deep Wilderness
+    flavia: Thunderspeaker
+61:
+  score: '12'
+  adversary: Scotland
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-3-5'
+  players:
+    flavia: Lure of the Deep Wilderness
+    paul: Starlight Seeks its Form
+    man: Sharp Fangs Behind the Leaves
+62:
+  score: '42'
+  adversary: England
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-1-21'
+  players:
+    spencer: River Surges in Sunlight
+    walker: Starlight Seeks its Form
+    paul: Thunderspeaker
+63:
+  score: '21'
+  adversary: Russia
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2023-8-14'
+  players:
+    walker: Volcano Looming High
+    man: Volcano Looming High
+    lapis: Thunderspeaker
+64:
+  score: '45'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-1-11'
+  players:
+    lapis: Starlight Seeks its Form
+    walker: Shadows Flicker like Flame
+65:
+  score: '60'
+  adversary: Habsburg
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2018-2-17'
+  players:
+    man: Volcano Looming High
+    brenda: Shadows Flicker like Flame
+    lapis: Starlight Seeks its Form
+66:
+  score: '28'
+  adversary: England
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-3-3'
+  players:
+    marcus: Shadows Flicker like Flame
+    brenda: Grinning Trickster Stirs Up Trouble
+    paul: Sharp Fangs Behind the Leaves
+67:
+  score: '36'
+  adversary: Scotland
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-2-10'
+  players:
+    lapis: Starlight Seeks its Form
+    marcus: Lure of the Deep Wilderness
+    julian: Starlight Seeks its Form
+68:
+  score: '57'
+  adversary: England
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-4-17'
+  players:
+    man: River Surges in Sunlight
+    lapis: Volcano Looming High
+    spencer: Grinning Trickster Stirs Up Trouble
+69:
+  score: '16'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2022-12-3'
+  players:
+    marcus: Starlight Seeks its Form
+    lapis: River Surges in Sunlight
+    amy: River Surges in Sunlight
+70:
+  score: '44'
+  adversary: Sweden
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-3-4'
+  players:
+    paul: Shadows Flicker like Flame
+    amy: Starlight Seeks its Form
+    lapis: Sharp Fangs Behind the Leaves
+71:
+  score: '43'
+  adversary: Sweden
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-5-8'
+  players:
+    brenda: River Surges in Sunlight
+    walker: Shadows Flicker like Flame
+72:
+  score: '59'
+  adversary: France
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2021-2-3'
+  players:
+    brenda: River Surges in Sunlight
+    flavia: River Surges in Sunlight
+73:
+  score: '26'
+  adversary: France
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2019-11-6'
+  players:
+    marcus: Bringer of Dreams and Nightmares
+    man: Lure of the Deep Wilderness
+    amy: Shadows Flicker like Flame
+74:
+  score: '50'
+  adversary: Habsburg
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2022-6-16'
+  players:
+    marcus: Bringer of Dreams and Nightmares
+    man: Lure of the Deep Wilderness
+    brenda: A Spread of Rampant Green
+75:
+  score: '28'
+  adversary: Russia
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2018-11-20'
+  players:
+    amy: River Surges in Sunlight
+    spencer: Shadows Flicker like Flame
+    brenda: Shadows Flicker like Flame
+76:
+  score: '49'
+  adversary: Brandenburg-Prussia
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2021-9-8'
+  players:
+    marcus: Grinning Trickster Stirs Up Trouble
+    flavia: Sharp Fangs Behind the Leaves
+    walker: Sharp Fangs Behind the Leaves
+77:
+  score: '16'
+  adversary: Habsburg
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-7-23'
+  players:
+    paul: Sharp Fangs Behind the Leaves
+    walker: Bringer of Dreams and Nightmares
+78:
+  score: '35'
+  adversary: Habsburg
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-4-27'
+  players:
+    amy: Grinning Trickster Stirs Up Trouble
+    spencer: Bringer of Dreams and Nightmares
+    flavia: River Surges in Sunlight
+79:
+  score: '20'
+  adversary: Russia
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-2-4'
+  players:
+    amy: Thunderspeaker
+    man: Grinning Trickster Stirs Up Trouble
+    walker: Lure of the Deep Wilderness
+80:
+  score: '23'
+  adversary: Scotland
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2018-3-23'
+  players:
+    walker: Grinning Trickster Stirs Up Trouble
+    paul: Lure of the Deep Wilderness
+    amy: Bringer of Dreams and Nightmares
+81:
+  score: '18'
+  adversary: England
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2023-5-7'
+  players:
+    marcus: Shadows Flicker like Flame
+    julian: A Spread of Rampant Green
+82:
+  score: '20'
+  adversary: Sweden
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-5-1'
+  players:
+    flavia: Shadows Flicker like Flame
+    brenda: Volcano Looming High
+    spencer: Starlight Seeks its Form
+83:
+  score: '52'
+  adversary: Scotland
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-8-19'
+  players:
+    paul: Shadows Flicker like Flame
+    spencer: Sharp Fangs Behind the Leaves
+    marcus: Starlight Seeks its Form
+84:
+  score: '15'
+  adversary: Russia
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2023-1-6'
+  players:
+    walker: Shadows Flicker like Flame
+    man: Bringer of Dreams and Nightmares
+85:
+  score: '37'
+  adversary: Scotland
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-9-8'
+  players:
+    walker: Lure of the Deep Wilderness
+    marcus: Sharp Fangs Behind the Leaves
+86:
+  score: '20'
+  adversary: Habsburg
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2022-7-10'
+  players:
+    flavia: Volcano Looming High
+    amy: Shadows Flicker like Flame
+87:
+  score: '45'
+  adversary: Sweden
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-1-1'
+  players:
+    amy: Bringer of Dreams and Nightmares
+    brenda: Lure of the Deep Wilderness
+    marcus: Sharp Fangs Behind the Leaves
+88:
+  score: '52'
+  adversary: Russia
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-4-5'
+  players:
+    man: River Surges in Sunlight
+    spencer: River Surges in Sunlight
+    julian: River Surges in Sunlight
+89:
+  score: '11'
+  adversary: Brandenburg-Prussia
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-2-16'
+  players:
+    walker: Grinning Trickster Stirs Up Trouble
+    lapis: Bringer of Dreams and Nightmares
+    julian: Shadows Flicker like Flame
+90:
+  score: '14'
+  adversary: Russia
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2020-11-2'
+  players:
+    brenda: Lure of the Deep Wilderness
+    paul: Bringer of Dreams and Nightmares
+    walker: Bringer of Dreams and Nightmares
+91:
+  score: '26'
+  adversary: Scotland
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-5-14'
+  players:
+    flavia: Sharp Fangs Behind the Leaves
+    paul: Bringer of Dreams and Nightmares
+    brenda: River Surges in Sunlight
+92:
+  score: '27'
+  adversary: Sweden
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2018-10-15'
+  players:
+    paul: Bringer of Dreams and Nightmares
+    spencer: Grinning Trickster Stirs Up Trouble
+    walker: Starlight Seeks its Form
+93:
+  score: '12'
+  adversary: France
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2023-12-11'
+  players:
+    man: Grinning Trickster Stirs Up Trouble
+    amy: River Surges in Sunlight
+    flavia: A Spread of Rampant Green
+94:
+  score: '55'
+  adversary: Habsburg
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-7-12'
+  players:
+    flavia: Lure of the Deep Wilderness
+    julian: Volcano Looming High
+    paul: Lure of the Deep Wilderness
+95:
+  score: '44'
+  adversary: Sweden
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-7-9'
+  players:
+    flavia: Grinning Trickster Stirs Up Trouble
+    spencer: A Spread of Rampant Green
+    brenda: River Surges in Sunlight
+96:
+  score: '49'
+  adversary: England
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2021-6-19'
+  players:
+    flavia: A Spread of Rampant Green
+    amy: A Spread of Rampant Green
+97:
+  score: '56'
+  adversary: Sweden
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2018-6-8'
+  players:
+    lapis: Shadows Flicker like Flame
+    paul: Volcano Looming High
+98:
+  score: '29'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2018-10-6'
+  players:
+    julian: Grinning Trickster Stirs Up Trouble
+    paul: A Spread of Rampant Green
+99:
+  score: '48'
+  adversary: Russia
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-7-26'
+  players:
+    julian: Volcano Looming High
+    brenda: Starlight Seeks its Form
+100:
+  score: '31'
+  adversary: France
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-1-7'
+  players:
+    amy: Lure of the Deep Wilderness
+    brenda: Volcano Looming High
+    spencer: Bringer of Dreams and Nightmares
+101:
+  score: '28'
+  adversary: Habsburg
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2022-8-5'
+  players:
+    man: Bringer of Dreams and Nightmares
+    paul: Grinning Trickster Stirs Up Trouble
+102:
+  score: '53'
+  adversary: England
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2022-11-5'
+  players:
+    flavia: River Surges in Sunlight
+    spencer: Lure of the Deep Wilderness
+103:
+  score: '36'
+  adversary: France
+  level: '3'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2021-3-25'
+  players:
+    lapis: A Spread of Rampant Green
+    paul: Sharp Fangs Behind the Leaves
+    julian: Thunderspeaker
+104:
+  score: '40'
+  adversary: England
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-9-13'
+  players:
+    julian: Volcano Looming High
+    marcus: Starlight Seeks its Form
+105:
+  score: '46'
+  adversary: France
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-4-10'
+  players:
+    brenda: Sharp Fangs Behind the Leaves
+    julian: Bringer of Dreams and Nightmares
+106:
+  score: '33'
+  adversary: France
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2023-3-12'
+  players:
+    man: Lure of the Deep Wilderness
+    brenda: Sharp Fangs Behind the Leaves
+107:
+  score: '11'
+  adversary: Russia
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-3-23'
+  players:
+    amy: Bringer of Dreams and Nightmares
+    brenda: Grinning Trickster Stirs Up Trouble
+    flavia: Grinning Trickster Stirs Up Trouble
+108:
+  score: '32'
+  adversary: Brandenburg-Prussia
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2019-7-22'
+  players:
+    paul: Grinning Trickster Stirs Up Trouble
+    lapis: Bringer of Dreams and Nightmares
+109:
+  score: '58'
+  adversary: Habsburg
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2022-12-26'
+  players:
+    spencer: Volcano Looming High
+    marcus: Sharp Fangs Behind the Leaves
+    julian: Lure of the Deep Wilderness
+110:
+  score: '31'
+  adversary: Scotland
+  level: '3'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2022-3-21'
+  players:
+    julian: Shadows Flicker like Flame
+    marcus: Grinning Trickster Stirs Up Trouble
+    amy: River Surges in Sunlight
+111:
+  score: '55'
+  adversary: Scotland
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2018-8-26'
+  players:
+    flavia: Shadows Flicker like Flame
+    paul: A Spread of Rampant Green
+    marcus: A Spread of Rampant Green
+112:
+  score: '50'
+  adversary: England
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2023-10-18'
+  players:
+    walker: River Surges in Sunlight
+    man: Starlight Seeks its Form
+    spencer: Starlight Seeks its Form
+113:
+  score: '13'
+  adversary: Brandenburg-Prussia
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-8-1'
+  players:
+    spencer: River Surges in Sunlight
+    lapis: Bringer of Dreams and Nightmares
+    flavia: A Spread of Rampant Green
+114:
+  score: '40'
+  adversary: Scotland
+  level: '3'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2018-12-19'
+  players:
+    amy: Bringer of Dreams and Nightmares
+    flavia: Sharp Fangs Behind the Leaves
+    man: Sharp Fangs Behind the Leaves
+115:
+  score: '11'
+  adversary: Sweden
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-2-27'
+  players:
+    paul: Thunderspeaker
+    walker: Shadows Flicker like Flame
+    marcus: Sharp Fangs Behind the Leaves
+116:
+  score: '48'
+  adversary: France
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2018-4-17'
+  players:
+    walker: Volcano Looming High
+    flavia: Bringer of Dreams and Nightmares
+    man: Grinning Trickster Stirs Up Trouble
+117:
+  score: '55'
+  adversary: Sweden
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-6-12'
+  players:
+    walker: Thunderspeaker
+    man: Thunderspeaker
+118:
+  score: '48'
+  adversary: Sweden
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2020-11-22'
+  players:
+    marcus: Bringer of Dreams and Nightmares
+    walker: Thunderspeaker
+    spencer: Shadows Flicker like Flame
+119:
+  score: '58'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2018-6-24'
+  players:
+    marcus: Grinning Trickster Stirs Up Trouble
+    walker: River Surges in Sunlight
+120:
+  score: '43'
+  adversary: Habsburg
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2020-3-11'
+  players:
+    man: Starlight Seeks its Form
+    brenda: Volcano Looming High
+    walker: Shadows Flicker like Flame
+121:
+  score: '31'
+  adversary: Russia
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2023-2-12'
+  players:
+    flavia: Grinning Trickster Stirs Up Trouble
+    marcus: River Surges in Sunlight
+    man: Lure of the Deep Wilderness
+122:
+  score: '33'
+  adversary: France
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-10-4'
+  players:
+    spencer: Starlight Seeks its Form
+    flavia: Volcano Looming High
+    brenda: River Surges in Sunlight
+123:
+  score: '50'
+  adversary: Brandenburg-Prussia
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-7-11'
+  players:
+    flavia: River Surges in Sunlight
+    amy: Volcano Looming High
+    spencer: Grinning Trickster Stirs Up Trouble
+124:
+  score: '35'
+  adversary: Brandenburg-Prussia
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2023-8-25'
+  players:
+    man: Grinning Trickster Stirs Up Trouble
+    julian: Bringer of Dreams and Nightmares
+125:
+  score: '45'
+  adversary: Habsburg
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2022-12-28'
+  players:
+    brenda: Starlight Seeks its Form
+    lapis: Starlight Seeks its Form
+    spencer: Grinning Trickster Stirs Up Trouble
+126:
+  score: '57'
+  adversary: Brandenburg-Prussia
+  level: '2'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2022-8-2'
+  players:
+    paul: A Spread of Rampant Green
+    brenda: Starlight Seeks its Form
+    spencer: Grinning Trickster Stirs Up Trouble
+127:
+  score: '48'
+  adversary: Sweden
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2023-2-28'
+  players:
+    brenda: A Spread of Rampant Green
+    spencer: Starlight Seeks its Form
+128:
+  score: '32'
+  adversary: England
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-7-10'
+  players:
+    amy: Volcano Looming High
+    spencer: Thunderspeaker
+    julian: Bringer of Dreams and Nightmares
+129:
+  score: '36'
+  adversary: France
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-8-12'
+  players:
+    spencer: Bringer of Dreams and Nightmares
+    marcus: Bringer of Dreams and Nightmares
+130:
+  score: '38'
+  adversary: Scotland
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2022-5-24'
+  players:
+    brenda: Sharp Fangs Behind the Leaves
+    julian: Sharp Fangs Behind the Leaves
+    marcus: A Spread of Rampant Green
+131:
+  score: '47'
+  adversary: Habsburg
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2021-6-19'
+  players:
+    man: Grinning Trickster Stirs Up Trouble
+    marcus: River Surges in Sunlight
+132:
+  score: '39'
+  adversary: Scotland
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-3-17'
+  players:
+    julian: River Surges in Sunlight
+    marcus: Shadows Flicker like Flame
+    flavia: Sharp Fangs Behind the Leaves
+133:
+  score: '50'
+  adversary: France
+  level: '2'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-11-28'
+  players:
+    julian: River Surges in Sunlight
+    brenda: Lure of the Deep Wilderness
+    spencer: A Spread of Rampant Green
+134:
+  score: '39'
+  adversary: France
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-7-2'
+  players:
+    flavia: Volcano Looming High
+    paul: River Surges in Sunlight
+135:
+  score: '48'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-5-9'
+  players:
+    julian: River Surges in Sunlight
+    flavia: Sharp Fangs Behind the Leaves
+136:
+  score: '31'
+  adversary: Sweden
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-10-19'
+  players:
+    walker: Bringer of Dreams and Nightmares
+    spencer: River Surges in Sunlight
+    flavia: Starlight Seeks its Form
+137:
+  score: '48'
+  adversary: Habsburg
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-4-9'
+  players:
+    flavia: Lure of the Deep Wilderness
+    brenda: Thunderspeaker
+    paul: Lure of the Deep Wilderness
+138:
+  score: '21'
+  adversary: Habsburg
+  level: '2'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2019-9-13'
+  players:
+    spencer: Thunderspeaker
+    lapis: Shadows Flicker like Flame
+    julian: Starlight Seeks its Form
+139:
+  score: '60'
+  adversary: France
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-12-24'
+  players:
+    amy: Volcano Looming High
+    marcus: River Surges in Sunlight
+    flavia: Grinning Trickster Stirs Up Trouble
+140:
+  score: '17'
+  adversary: Scotland
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-5-11'
+  players:
+    marcus: Starlight Seeks its Form
+    flavia: Shadows Flicker like Flame
+    man: Grinning Trickster Stirs Up Trouble
+141:
+  score: '29'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-6-2'
+  players:
+    julian: Shadows Flicker like Flame
+    brenda: Grinning Trickster Stirs Up Trouble
+142:
+  score: '55'
+  adversary: England
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-4-27'
+  players:
+    paul: Grinning Trickster Stirs Up Trouble
+    julian: Volcano Looming High
+    walker: Lure of the Deep Wilderness
+143:
+  score: '44'
+  adversary: Habsburg
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-6-24'
+  players:
+    marcus: Starlight Seeks its Form
+    spencer: Bringer of Dreams and Nightmares
+    julian: Bringer of Dreams and Nightmares
+144:
+  score: '30'
+  adversary: England
+  level: '3'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2020-2-25'
+  players:
+    amy: Starlight Seeks its Form
+    flavia: Volcano Looming High
+145:
+  score: '13'
+  adversary: Habsburg
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2018-10-23'
+  players:
+    flavia: River Surges in Sunlight
+    spencer: Sharp Fangs Behind the Leaves
+    paul: Thunderspeaker
+146:
+  score: '31'
+  adversary: Brandenburg-Prussia
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2021-6-28'
+  players:
+    walker: Volcano Looming High
+    brenda: A Spread of Rampant Green
+147:
+  score: '21'
+  adversary: Scotland
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2023-2-8'
+  players:
+    man: Lure of the Deep Wilderness
+    marcus: Volcano Looming High
+    paul: Volcano Looming High
+148:
+  score: '59'
+  adversary: Sweden
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-11-13'
+  players:
+    brenda: River Surges in Sunlight
+    amy: Bringer of Dreams and Nightmares
+    walker: River Surges in Sunlight
+149:
+  score: '40'
+  adversary: Habsburg
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-6-14'
+  players:
+    amy: Grinning Trickster Stirs Up Trouble
+    lapis: A Spread of Rampant Green
+    walker: Sharp Fangs Behind the Leaves
+150:
+  score: '28'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-3-20'
+  players:
+    flavia: Grinning Trickster Stirs Up Trouble
+    julian: Grinning Trickster Stirs Up Trouble
+    walker: Lure of the Deep Wilderness
+151:
+  score: '16'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-1-8'
+  players:
+    lapis: Lure of the Deep Wilderness
+    marcus: Shadows Flicker like Flame
+152:
+  score: '48'
+  adversary: Sweden
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-9-8'
+  players:
+    lapis: Sharp Fangs Behind the Leaves
+    marcus: Thunderspeaker
+153:
+  score: '45'
+  adversary: Scotland
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2019-6-18'
+  players:
+    amy: Sharp Fangs Behind the Leaves
+    paul: Thunderspeaker
+    lapis: Bringer of Dreams and Nightmares
+154:
+  score: '14'
+  adversary: Brandenburg-Prussia
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-10-11'
+  players:
+    spencer: Thunderspeaker
+    julian: Grinning Trickster Stirs Up Trouble
+    flavia: A Spread of Rampant Green
+155:
+  score: '18'
+  adversary: France
+  level: '2'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2019-11-11'
+  players:
+    julian: River Surges in Sunlight
+    paul: Sharp Fangs Behind the Leaves
+    walker: Bringer of Dreams and Nightmares
+156:
+  score: '20'
+  adversary: Scotland
+  level: '3'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2023-9-27'
+  players:
+    marcus: Lure of the Deep Wilderness
+    lapis: Starlight Seeks its Form
+    man: Grinning Trickster Stirs Up Trouble
+157:
+  score: '10'
+  adversary: Habsburg
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-8-28'
+  players:
+    man: Volcano Looming High
+    brenda: Sharp Fangs Behind the Leaves
+    lapis: Bringer of Dreams and Nightmares
+158:
+  score: '20'
+  adversary: Sweden
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2022-8-5'
+  players:
+    flavia: Bringer of Dreams and Nightmares
+    amy: Shadows Flicker like Flame
+    paul: Bringer of Dreams and Nightmares
+159:
+  score: '19'
+  adversary: Habsburg
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2023-10-20'
+  players:
+    spencer: Bringer of Dreams and Nightmares
+    man: Volcano Looming High
+160:
+  score: '49'
+  adversary: Scotland
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2021-1-1'
+  players:
+    amy: A Spread of Rampant Green
+    walker: Lure of the Deep Wilderness
+    brenda: Lure of the Deep Wilderness
+161:
+  score: '28'
+  adversary: Scotland
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2022-11-4'
+  players:
+    spencer: Lure of the Deep Wilderness
+    walker: Volcano Looming High
+162:
+  score: '13'
+  adversary: France
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2023-4-1'
+  players:
+    spencer: Shadows Flicker like Flame
+    flavia: Volcano Looming High
+    lapis: Sharp Fangs Behind the Leaves
+163:
+  score: '21'
+  adversary: Scotland
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2019-8-14'
+  players:
+    amy: Bringer of Dreams and Nightmares
+    man: Thunderspeaker
+    spencer: Shadows Flicker like Flame
+164:
+  score: '12'
+  adversary: Brandenburg-Prussia
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2019-2-22'
+  players:
+    paul: Grinning Trickster Stirs Up Trouble
+    man: Thunderspeaker
+    walker: Starlight Seeks its Form
+165:
+  score: '15'
+  adversary: Russia
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-5-1'
+  players:
+    amy: Grinning Trickster Stirs Up Trouble
+    spencer: Bringer of Dreams and Nightmares
+    julian: Shadows Flicker like Flame
+166:
+  score: '24'
+  adversary: Brandenburg-Prussia
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2020-4-21'
+  players:
+    brenda: Bringer of Dreams and Nightmares
+167:
+  score: '54'
+  adversary: England
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-2-8'
+  players:
+    flavia: Thunderspeaker
+    lapis: Lure of the Deep Wilderness
+    walker: A Spread of Rampant Green
+168:
+  score: '39'
+  adversary: Scotland
+  level: '3'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-2-18'
+  players:
+    julian: Thunderspeaker
+    brenda: Starlight Seeks its Form
+169:
+  score: '31'
+  adversary: France
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2019-5-7'
+  players:
+    man: Shadows Flicker like Flame
+    spencer: Volcano Looming High
+    amy: Shadows Flicker like Flame
+170:
+  score: '12'
+  adversary: England
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2021-12-2'
+  players:
+    flavia: A Spread of Rampant Green
+    amy: Lure of the Deep Wilderness
+171:
+  score: '35'
+  adversary: Brandenburg-Prussia
+  level: '5'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2023-3-1'
+  players:
+    brenda: Shadows Flicker like Flame
+    flavia: Shadows Flicker like Flame
+    marcus: Grinning Trickster Stirs Up Trouble
+172:
+  score: '21'
+  adversary: Scotland
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-5-12'
+  players:
+    amy: Volcano Looming High
+    flavia: Grinning Trickster Stirs Up Trouble
+    walker: A Spread of Rampant Green
+173:
+  score: '49'
+  adversary: Russia
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2022-3-11'
+  players:
+    marcus: Grinning Trickster Stirs Up Trouble
+    paul: Lure of the Deep Wilderness
+    flavia: Grinning Trickster Stirs Up Trouble
+174:
+  score: '27'
+  adversary: Scotland
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2020-6-5'
+  players:
+    man: Sharp Fangs Behind the Leaves
+    amy: Lure of the Deep Wilderness
+    walker: A Spread of Rampant Green
+175:
+  score: '32'
+  adversary: France
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-3-14'
+  players:
+    walker: Grinning Trickster Stirs Up Trouble
+    man: Starlight Seeks its Form
+    julian: Grinning Trickster Stirs Up Trouble
+176:
+  score: '12'
+  adversary: England
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-10-5'
+  players:
+    walker: Grinning Trickster Stirs Up Trouble
+    man: River Surges in Sunlight
+    amy: Sharp Fangs Behind the Leaves
+177:
+  score: '16'
+  adversary: Russia
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2018-7-14'
+  players:
+    man: Thunderspeaker
+    flavia: Bringer of Dreams and Nightmares
+178:
+  score: '36'
+  adversary: Russia
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-8-28'
+  players:
+    spencer: A Spread of Rampant Green
+    amy: Lure of the Deep Wilderness
+    flavia: A Spread of Rampant Green
+179:
+  score: '55'
+  adversary: Brandenburg-Prussia
+  level: '3'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2019-9-16'
+  players:
+    man: Grinning Trickster Stirs Up Trouble
+    lapis: A Spread of Rampant Green
+180:
+  score: '49'
+  adversary: France
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2018-9-19'
+  players:
+    spencer: Thunderspeaker
+    man: Shadows Flicker like Flame
+    lapis: Sharp Fangs Behind the Leaves
+181:
+  score: '42'
+  adversary: Russia
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-2-4'
+  players:
+    spencer: Grinning Trickster Stirs Up Trouble
+    brenda: Starlight Seeks its Form
+    marcus: Sharp Fangs Behind the Leaves
+182:
+  score: '19'
+  adversary: Sweden
+  level: '0'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2022-11-26'
+  players:
+    amy: Grinning Trickster Stirs Up Trouble
+    walker: A Spread of Rampant Green
+    paul: A Spread of Rampant Green
+183:
+  score: '37'
+  adversary: France
+  level: '4'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2020-4-25'
+  players:
+    brenda: Shadows Flicker like Flame
+    paul: Shadows Flicker like Flame
+    julian: Lure of the Deep Wilderness
+184:
+  score: '15'
+  adversary: Brandenburg-Prussia
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-10-18'
+  players:
+    brenda: Thunderspeaker
+    flavia: River Surges in Sunlight
+    lapis: Starlight Seeks its Form
+185:
+  score: '20'
+  adversary: Habsburg
+  level: '1'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-9-1'
+  players:
+    amy: Sharp Fangs Behind the Leaves
+    julian: Volcano Looming High
+    spencer: Grinning Trickster Stirs Up Trouble
+186:
+  score: '11'
+  adversary: England
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2021-1-3'
+  players:
+    paul: Volcano Looming High
+    brenda: A Spread of Rampant Green
+    spencer: Shadows Flicker like Flame
+187:
+  score: '21'
+  adversary: Scotland
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2020-1-8'
+  players:
+    julian: Starlight Seeks its Form
+    paul: River Surges in Sunlight
+    spencer: Volcano Looming High
+188:
+  score: '47'
+  adversary: England
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2018-12-9'
+  players:
+    walker: A Spread of Rampant Green
+    julian: Volcano Looming High
+189:
+  score: '59'
+  adversary: Scotland
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2020-8-8'
+  players:
+    lapis: Shadows Flicker like Flame
+    spencer: Thunderspeaker
+    man: Starlight Seeks its Form
+190:
+  score: '22'
+  adversary: Sweden
+  level: '1'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-10-24'
+  players:
+    walker: Shadows Flicker like Flame
+    man: Volcano Looming High
+    julian: Grinning Trickster Stirs Up Trouble
+191:
+  score: '43'
+  adversary: Brandenburg-Prussia
+  level: '2'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2019-2-14'
+  players:
+    marcus: Grinning Trickster Stirs Up Trouble
+    amy: Sharp Fangs Behind the Leaves
+    walker: A Spread of Rampant Green
+192:
+  score: '19'
+  adversary: Russia
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2018-12-16'
+  players:
+    paul: A Spread of Rampant Green
+    man: River Surges in Sunlight
+193:
+  score: '31'
+  adversary: Brandenburg-Prussia
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2018-5-20'
+  players:
+    lapis: Sharp Fangs Behind the Leaves
+    paul: Grinning Trickster Stirs Up Trouble
+194:
+  score: '56'
+  adversary: Russia
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-8-21'
+  players:
+    lapis: Starlight Seeks its Form
+    paul: Bringer of Dreams and Nightmares
+    amy: Starlight Seeks its Form
+195:
+  score: '36'
+  adversary: France
+  level: '4'
+  win?: 'true'
+  healthy_island?: 'true'
+  date: '2022-10-15'
+  players:
+    paul: Grinning Trickster Stirs Up Trouble
+    brenda: Sharp Fangs Behind the Leaves
+    flavia: Bringer of Dreams and Nightmares
+196:
+  score: '46'
+  adversary: Habsburg
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2018-7-28'
+  players:
+    julian: Lure of the Deep Wilderness
+    paul: Lure of the Deep Wilderness
+    amy: Thunderspeaker
+197:
+  score: '29'
+  adversary: Scotland
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2019-8-16'
+  players:
+    brenda: Sharp Fangs Behind the Leaves
+    spencer: Shadows Flicker like Flame
+    paul: Grinning Trickster Stirs Up Trouble
+198:
+  score: '11'
+  adversary: Sweden
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2023-3-14'
+  players:
+    marcus: Starlight Seeks its Form
+    spencer: Volcano Looming High
+199:
+  score: '47'
+  adversary: Brandenburg-Prussia
+  level: '6'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2021-12-7'
+  players:
+    julian: Lure of the Deep Wilderness
+    lapis: Bringer of Dreams and Nightmares
+    walker: Lure of the Deep Wilderness
+200:
+  score: '15'
+  adversary: France
+  level: '3'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2022-10-26'
+  players:
+    paul: Bringer of Dreams and Nightmares
+    brenda: Volcano Looming High
+    flavia: Shadows Flicker like Flame
+201:
+  score: '47'
+  adversary: Habsburg
+  level: '2'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2020-7-7'
+  players:
+    walker: Grinning Trickster Stirs Up Trouble
+    brenda: Lure of the Deep Wilderness
+    spencer: Volcano Looming High
+202:
+  score: '10'
+  adversary: Sweden
+  level: '5'
+  win?: 'false'
+  healthy_island?: 'true'
+  date: '2020-7-12'
+  players:
+    paul: River Surges in Sunlight
+    brenda: Grinning Trickster Stirs Up Trouble
+203:
+  score: '26'
+  adversary: England
+  level: '6'
+  win?: 'true'
+  healthy_island?: 'false'
+  date: '2018-7-4'
+  players:
+    man: Bringer of Dreams and Nightmares
+    paul: A Spread of Rampant Green
+204:
+  score: '40'
+  adversary: Russia
+  level: '0'
+  win?: 'false'
+  healthy_island?: 'false'
+  date: '2018-2-18'
+  players:
+    brenda: Shadows Flicker like Flame
+    marcus: A Spread of Rampant Green
+    amy: Lure of the Deep Wilderness
