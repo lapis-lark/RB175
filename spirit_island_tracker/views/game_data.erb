@@ -1,26 +1,13 @@
 <h2>Game <%= @game_id %> Data</h2>
-<% game = @users_data[@user][@game_id] %>
-<p>Victory ~ <%= game['win?'] %></p>
-<p>Score ~ <%= game['score'] %></p>
-
-
-
-
-
-
-<p>Adversary ~ <%= game['adversary'] %></p>
-<p>Adverserary Level ~ <%= game['level'] %></p>
-<p>Healthy Island? ~ <%= game['healthy_island?'] %></p>
-<p>Date Played ~ <%= game['date'] %></p>
-<p><%=  %></p>
-<p><%=  %></p>
-<p><%=  %></p>
-<p><%=  %></p>
-<p><%=  %></p>
-
+<p>Victory ~ <%= @game['win?'] %></p>
+<p>Score ~ <%= @game['score'] %></p>
+<p>Adversary ~ <%= @game['adversary'] %></p>
+<p>Adverserary Level ~ <%= @game['level'] %></p>
+<p>Healthy Island? ~ <%= @game['healthy_island?'] %></p>
+<p>Date Played ~ <%= @game['date'] %></p>
 <h4>Players and Spirits</h4>
 <ul>
-  <% game['players'].each do |player, spirit| %>
+  <% @game['players'].each do |player, spirit| %>
     <li><a href=<%= "/users/#{player}" %>><%= player %></a><%= ": #{spirit}" %></li>
   <% end %>
 </ul>
