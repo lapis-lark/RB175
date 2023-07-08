@@ -1,5 +1,6 @@
 <h2><%= "#{@user}'s Stats:" %></h2>
 <p><em><%= display_win_information(@user) %></em></p>
+<>
 <p>Best game: <%= best_game(@user) %></p>
 <p>Most Played Spirit: <%= most_played_spirit(@user) %></p>
 <p>Least Played Spirit: <%= least_played_spirit(@user) %></p>
@@ -8,6 +9,10 @@
   <% @user_data["lapis"].each do |game, _| %>
     <li><a href=<%= "/users/games/#{game}" %> ><%= game %></a></li>
   <% end %>
-
-
 </ul>
+
+<% content_for :header_links do %>
+  <a href="/">Player Index</a>
+  <p>omnomnom</p>
+  <h1>cooookiieees</h1>
+<% end %>

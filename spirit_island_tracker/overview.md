@@ -43,3 +43,15 @@ STEPS:
   - most played spirit (x times)
   - least played spirits (x times)
   
+
+
+### edit page
+  - input fields for:
+    - win? (radio?)
+    - healthy_island? (radio?)
+    - score (integer)
+    - adversary (drop down)
+    - level (drop down)
+    - players (drop down, add new possible, 1-6)
+    - spirit for each player (drop down)
+    - date (yyyy-mm-dd format text field)

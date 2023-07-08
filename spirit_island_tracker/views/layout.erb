@@ -2,8 +2,13 @@
 <html>
   <head>
     <title>Spirit Island Tracker</title>
+    <link rel="stylesheet" href="/stylesheets/spirit_styles.css">
 
   </head>
+
+  <header>
+    <%= yield_content :header_links %>
+  </header>
 
   <body>
     <%= yield %>

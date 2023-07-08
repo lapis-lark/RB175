@@ -3,6 +3,7 @@ require 'sinatra/reloader' if development?
 require "tilt/erubis"
 require 'date'
 require 'yaml'
+require 'sinatra/content_for'
 
 
 def data_path
@@ -26,6 +27,10 @@ def get_user_games(user)
   user_games = @game_data.select { |_, data| data["players"].include?(user) }
 end
 
+def get_users
+  YAML.load(File.read(data_path + "/users.yml"))
+end
+
 def display_win_information(user)
   user_games = get_user_games(user)
   total_games = user_games.keys.size
@@ -47,6 +52,7 @@ end
 
 before do
   @game_data = load_game_data
+  @users = get_users
 end
 
 get '/' do
@@ -66,4 +72,8 @@ get '/users/:user/games/:game_id' do |user, game_id|
   @user = user
   # return @users_data[@user][@game_id].inspect
   erb :game_data
+end
+
+get '/new_record' do
+  erb :new_record
 end

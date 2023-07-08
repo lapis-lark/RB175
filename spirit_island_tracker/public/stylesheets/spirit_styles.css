@@ -1,0 +1,11 @@
+p.header {
+  position: absolute;
+  right: 0px;
+  width: 130px;
+  padding: 10px;
+}
+
+#input {
+  padding: 100px;
+  background-color: yellow;
+}

@@ -1,14 +1,11 @@
 ---
-lapis:
-  0:
-    win?: 'true'
-    healthy_island?: 'false'
-    score: '29'
-    adversary: Scotland
-    level: '4'
-    players:
-      lapis: Ocean's Hungry Grasp
-      brenda: Lightning's Swift Strike
-      paul: Bring of Dreams and Nightmares
-    date: '2023-07-07'
-    time: 2023-07-07 17:02:52.637202083 -06:00
+- lapis
+- brenda
+- paul
+- spencer
+- walker
+- man
+- marcus
+- julian
+- flavia
+- amy
